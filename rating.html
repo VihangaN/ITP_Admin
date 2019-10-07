@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/212f7c2ab0.js" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <style>
+    #rating_bar {
+        width:400px;
+        height:30px;
+
+    }
+
+    #rating_bar li{
+        list-style: none;
+        display:inline-block;
+    }
+    </style>
+</head>
+<body>
+
+    <div id="rating_bar">
+        <li ><i onclick="rating(this)" class="far fa-star"></i></li>
+        <li><i onclick="rating(this)" class="far fa-star"></i></li>
+        <li><i onclick="rating(this)" class="far fa-star"></i></li>
+        <li><i onclick="rating(this)" class="far fa-star"></i></li>
+        <li><i onclick="rating(this)" class="far fa-star"></i></li>
+    </div>
+
+
+    <script>
+
+
+
+   function rating(e) {
+   var val = 0;
+  
+    $(e).toggleClass('far fa-star fas fa-star');
+    var classname = $(e).attr("class");
+   
+    if(classname == "fas fa-star"){
+     
+        val = val+1;
+        store(val);
+    }
+    else{
+       
+    }
+
+   
+
+    }
+
+
+    function store(value){
+        var rating = [0]
+        rating.push(value)
+        alert(rating);
+    }
+
+   
+   
+     
+    </script>
+    
+</body>
+</html>

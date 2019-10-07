@@ -17,6 +17,7 @@
            </style>
 </head>
 <body>
+    
     <div class="cover">
         <div class="error">
             <img src="screen.png" alt="" width="80px">
@@ -32,12 +33,17 @@
                  
                 <div id="nav">
                        
-                        <li onclick="topmenu(1)" title="Dashboard"><i class="fas fa-tachometer-alt"></i></li>
-                        <li onclick="topmenu(2)"><i class="fa fa-chart-line"></i></li>
-                        <li>3</li>
+                        <li id="admin" title="Dashboard"><i class="fas fa-tachometer-alt"></i></li>
+                        <li id="admin" onclick="topmenu(1)"><i class="fas fa-user-graduate"></i></li>
+                        <li id="admin" onclick="topmenu(2)"><i class="fas fa-user-tie"></i></li>
+                        <li id="admin" onclick="topmenu(3)"><i class="fas fa-money-bill-alt"></i></li>
+                        <li id="admin" onclick="topmenu(4)"><i class="far fa-calendar-alt"></i></li>
+                      <li  onclick="topmenu(5)"><i class="fas fa-rss"></i></li>
+                        <li id="admin" onclick="topmenu(6)"><i class="fas fa-building"></i></li>
+                        <li  onclick="topmenu(7)"><i class="fas fa-sticky-note"></i></li>
+                        <li id="admin" onclick="topmenu(8)"><i class="fas fa-book"></i></li>
                         
-                        <li>4</li>
-                        <li>5</li>
+                       
                 </div>
                 
             </div>
@@ -82,8 +88,12 @@
             </div>
 
             <div class="routercontainer">
-
+                <button onclick="student_login()">student login</button>
+                <button onclick=" notlog()">not logged</button>
+                <button onclick="log()">logged</button>
+               
                 Router outlet
+               
             </div>
         </div>
     </div>
