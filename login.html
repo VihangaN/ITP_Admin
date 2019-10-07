@@ -195,8 +195,7 @@ body{
         <div class="form-modal">
     
                 <div class="form-toggle">
-                    <button id="login-toggle" onclick="toggleLogin()">Student</button>
-                    <button id="login-toggle-acd" onclick="toggleLoginAcd()">Acadamic</button>
+               
                     <img class="login-logo" src="./SVG/logo new.svg" alt="">
                     <span class="login-text">Login here</span>
                 </div>
@@ -210,37 +209,9 @@ body{
                     </form>
                 </div>
             
-                <div id="login-form-acd">
-                    <form>
-                            <input type="text" placeholder="Enter email or username"/>
-                            <input type="password" placeholder="Enter password"/>
-                           
-                        <button type="button" class="btn signup">login</button>
-                    </form>
-                </div>
+               
             
             </div>
 
-            <script>
-            function toggleLoginAcd(){
-   document.getElementById("login-toggle").style.backgroundColor="#fff";
-    document.getElementById("login-toggle").style.color="#222";
-    document.getElementById("login-toggle-acd").style.backgroundColor="#3B62D1";
-    document.getElementById("login-toggle-acd").style.color="#fff";
-    document.getElementById("login-form-stu").style.display="none";
-    document.getElementById("login-form-acd").style.display="block";
-}
-
-function toggleLogin(){
-    document.getElementById("login-toggle").style.backgroundColor="#3B62D1";
-    document.getElementById("login-toggle").style.color="#fff";
-    document.getElementById("login-toggle-acd").style.backgroundColor="#fff";
-    document.getElementById("login-toggle-acd").style.color="#222";
-    document.getElementById("login-form-acd").style.display="none";
-    document.getElementById("login-form-stu").style.display="block";
-}
-
-            </script>
-            
 </body>
 </html>
