@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+   <input type="text" id="val"></input>
+    <button onclick="update()">change</button>
+
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 449.59 421.5" width="100px" height="100px"><defs>
+        <style>.cls-1{fill:#ffdd40;}.cls-2{font-size:138px;fill:#fff;font-family:Roboto-Regular, Roboto;}</style>
+        </defs><title>star</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+        <polygon class="cls-1" points="224.8 0 277.86 161 449.59 161 310.66 260.5 363.73 421.5 224.8 321.99 85.86 421.5 138.93 260.5 0 161 171.73 161 224.8 0"/>
+        <text  id ="display" class="cls-2" transform="translate(186.59 279.59)">0</text>
+        </g></g></svg>
+</body>
+<script>
+function update(){
+    var text = $("#val").val();
+    $('#display').html(text);
+}
+</script>
+</html>
