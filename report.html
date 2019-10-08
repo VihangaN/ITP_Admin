@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=tu, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>report</title>
+    <style>
+
+
+*{
+    font-family: roboto;
+}
+
+    #report_container{
+        width:30%;
+        height:90vh;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        left:50%;
+        top:50%;
+        z-index: 1000;
+       
+    }
+    #report_heading{
+        width:100%;
+        height:70px;
+        text-align:center;
+        font-size:15px;
+        line-height:70px;
+        border-bottom: 1px solid grey;
+        border-bottom-width:50%;
+    }
+
+    #report_body {
+        margin-top:30px;
+        text-align:center;
+    }
+
+    #report_body li{
+        list-style: none;
+        padding:10px 0px 10px 10px;
+      
+    }
+
+    #total{
+        
+        margin-left:100px;
+        margin-top:20px;
+    }
+
+    span{
+       
+      width:100%;
+    
+      margin-left:100px;
+      padding:0px 10px 0px 10px;
+      height:10px;
+    }
+    
+    li:nth-child(7){
+       
+        background: #4E73DF;
+        color:#fff;
+           }
+
+    .title{
+    font-weight: 1000;
+    }
+
+    .total_text{
+        width:100%;
+    
+      margin-left:100px;
+      padding:0px 10px 0px 10px;
+      height:10px;
+    }
+
+    #report_title{
+        width:100%;
+        height:70px;
+        text-align:center;
+        font-size:20px;
+        line-height:70px;
+    }
+
+    .logo_heading{
+        width:120px;
+        margin:0 auto;
+    }
+   
+    </style>
+</head>
+<body>
+
+    <div id="report_container">
+
+        <div id="report_heading">
+            
+           <img class="logo_heading" src="./SVG/logo new.svg" alt="">
+         
+        </div>
+
+        <div id="report_title">
+                Salary reciept
+        </div>
+
+        <div id="report_body">
+            <li>title <span>test</span></li>
+            <li>title <span>test</span></li>
+            <li>title <span>test</span></li>
+            <li>title <span>test</span></li>
+            <li>title <span>test</span></li>
+            <li>title <span>test</span></li>
+            <li class="title">Total <span>test</span></li>
+        </div>
+
+       
+
+
+
+    </div>
+    
+</body>
+</html>
